@@ -2,6 +2,7 @@ package br.pro.hashi.ensino.desagil.projeto1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,13 +15,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textExample = findViewById(R.id.text_example);
-        EditText editExample = findViewById(R.id.edit_example);
-        Button buttonExample = findViewById(R.id.button_example);
+        Button buttonTranslator = findViewById(R.id.tradutor_button);
+        Button buttonLista = findViewById(R.id.texts_button);
 
-        buttonExample.setOnClickListener((view) -> {
-            String content = editExample.getText().toString();
-            textExample.setText(content);
+        buttonTranslator.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Hist2Activity.class);
+            startActivity(intent);
         });
+
+       // buttonLista.setOnClickListener((view) -> {
+       //     Intent intent = new Intent(this, PredefinedTexts.class);
+       //     startActivity(intent);
+        //});
     }
 }

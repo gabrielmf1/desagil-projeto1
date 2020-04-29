@@ -7,22 +7,26 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView android:id="@+id/text_example"
+    <TextView android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="Escreva a mensagem" />
+        android:textSize="50dp"
+        android:gravity="center"
+        android:text="Menu" />
 
-    <EditText android:id="@+id/edit_example"
+    <Button android:id="@+id/tradutor_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:hint="Mensagem" />
-
-    <Button android:id="@+id/button_example"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:layout_margin="5dp"
-        android:text="Enviar" />
+        android:textSize="20dp"
+        android:text="Tradutor" />
+
+    <Button android:id="@+id/texts_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+        android:text="Mensagens Rápidas" />
 
 </LinearLayout>
