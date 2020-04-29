@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-       // buttonLista.setOnClickListener((view) -> {
-       //     Intent intent = new Intent(this, PredefinedTexts.class);
-       //     startActivity(intent);
-        //});
+        buttonLista.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, PredefinedTexts.class);
+            startActivity(intent);
+        });
     }
 }
