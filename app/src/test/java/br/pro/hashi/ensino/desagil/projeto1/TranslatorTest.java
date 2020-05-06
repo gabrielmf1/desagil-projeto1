@@ -199,9 +199,7 @@ public class TranslatorTest {
     }
 
     @Test
-    public void fromA() {
-        Assert.assertEquals(".-", translator.charToMorse('a'));
-    }
+    public void fromA() {Assert.assertEquals(".-", translator.charToMorse('a')); }
 
     @Test
     public void fromB() {

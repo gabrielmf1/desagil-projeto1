@@ -4,29 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
+        android:textSize="70dp"
         android:gravity="center"
         android:text="Menu" />
 
     <Button android:id="@+id/tradutor_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_margin="5dp"
-        android:textSize="20dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/retangulo"
+        android:textColor="#FFFFFF"
         android:text="Tradutor" />
 
     <Button android:id="@+id/texts_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:textSize="20dp"
+        android:layout_height="80dp"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/retangulo"
+        android:textColor="#FFFFFF"
         android:text="Mensagens Rápidas" />
 
 </LinearLayout>
