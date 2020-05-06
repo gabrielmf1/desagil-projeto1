@@ -2,6 +2,7 @@ package br.pro.hashi.ensino.desagil.projeto1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class Hist2Activity extends AppCompatActivity {
         Button buttonProximo = findViewById(R.id.botao_prox);
         Button buttonEspaco = findViewById(R.id.botao_espaço);
         Button buttonApagar = findViewById(R.id.botao_apagar);
+        Button buttonDicionario = findViewById(R.id.botao_dicionario);
 
         Translator translator = new Translator();
 
@@ -69,6 +71,11 @@ public class Hist2Activity extends AppCompatActivity {
             else{
                 textTraducao.setText("");
             }
+        });
+
+        buttonDicionario.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Dicionario.class);
+            startActivity(intent);
         });
 
     }
