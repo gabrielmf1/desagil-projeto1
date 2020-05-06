@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Hist2Activity"></activity>
-        <activity android:name=".PredefinedTexts"></activity>
+        <activity android:name=".Posicao"></activity>
+        <activity android:name=".Banheiro" />
+        <activity android:name=".Refeicao" />
+        <activity android:name=".Hist2Activity" />
+        <activity android:name=".PredefinedTexts" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -2,6 +2,7 @@ package br.pro.hashi.ensino.desagil.projeto1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,8 +15,25 @@ public class PredefinedTexts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_predefined_texts);
 
-        TextView textExample = findViewById(R.id.MenuMensagens);
-        Button buttonExample = findViewById(R.id.texts_button);
+        Button buttonRefeicao = findViewById(R.id.refeicao);
+        Button buttonBanheiro = findViewById(R.id.banheiro);
+        Button buttonPosicao = findViewById(R.id.posicao);
+
+        buttonRefeicao.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Refeicao.class);
+            startActivity(intent);
+        });
+
+        buttonBanheiro.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Banheiro.class);
+            startActivity(intent);
+        });
+
+        buttonPosicao.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, Posicao.class);
+            startActivity(intent);
+        });
+
     }
 }
 
