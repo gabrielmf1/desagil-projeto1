@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonTranslator = findViewById(R.id.tradutor_button);
         Button buttonLista = findViewById(R.id.texts_button);
+        Button buttonDict = findViewById(R.id.dic5_button);
 
         buttonTranslator.setOnClickListener((view) -> {
             Intent intent = new Intent(this, Hist2Activity.class);
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
         buttonLista.setOnClickListener((view) -> {
             Intent intent = new Intent(this, PredefinedTexts.class);
+            startActivity(intent);
+        });
+
+        buttonDict.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, dic5Activity.class);
             startActivity(intent);
         });
     }
