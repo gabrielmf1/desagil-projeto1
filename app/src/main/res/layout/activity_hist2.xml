@@ -8,6 +8,7 @@
     android:paddingRight="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <TextView android:id="@+id/escrita_morse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:layout_marginTop="50dp"
         android:layout_margin="5dp"
         android:hint="Escrita em Morse" />
+
     <TextView android:id="@+id/traducao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,6 +44,7 @@
         android:background="@drawable/retangulo"
         android:textColor="#FFFFFF"
         android:text="Espaço" />
+
     <Button android:id="@+id/botao_apagar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -59,6 +62,7 @@
         android:background="@drawable/retangulo"
         android:textColor="#FFFFFF"
         android:text="Proxima letra" />
+
     <Button android:id="@+id/botao_morse"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -67,7 +71,5 @@
         android:background="@drawable/retangulo"
         android:textColor="#FFFFFF"
         android:text="Toque: . \n Segurar: -" />
-
-
 
 </LinearLayout>

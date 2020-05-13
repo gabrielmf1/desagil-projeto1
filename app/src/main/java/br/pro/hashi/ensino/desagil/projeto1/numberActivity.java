@@ -7,24 +7,21 @@ import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
 import android.telephony.SmsManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class SMS extends AppCompatActivity {
+public class numberActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sms);
+        setContentView(R.layout.activity_number);
 
         TextView textMorse = findViewById(R.id.escrita_morse);
         TextView textTraducao = findViewById(R.id.traducao);
         Button buttonMorse = findViewById(R.id.botao_morse);
         Button buttonProximo = findViewById(R.id.botao_prox);
-        Button buttonEspaco = findViewById(R.id.botao_espaço);
         Button buttonApagar = findViewById(R.id.botao_apagar);
-        Button buttonNumero = findViewById(R.id.botao_numero);
+        Button buttonSend = findViewById(R.id.botao_enviar);
 
         Translator translator = new Translator();
 
@@ -64,10 +61,6 @@ public class SMS extends AppCompatActivity {
             textMorse.setText("");
         });
 
-        buttonEspaco.setOnClickListener((view) ->{
-            textTraducao.setText(textTraducao.getText().toString() + " ");
-        });
-
         buttonApagar.setOnClickListener((view) -> {
             if (textMorse.getText().toString() !=""){
                 textMorse.setText("");
@@ -77,10 +70,10 @@ public class SMS extends AppCompatActivity {
             }
         });
 
-        buttonNumero.setOnClickListener((view) -> {
-            Intent intent = new Intent(this, numberActivity.class);
+        buttonSend.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, EnviadoActivity.class);
             startActivity(intent);
         });
+
     }
 }
-
