@@ -12,11 +12,11 @@
     <TextView android:id="@+id/escrita_morse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="35sp"
+        android:textSize="40sp"
         android:gravity="center"
         android:layout_marginTop="50dp"
         android:layout_margin="5dp"
-        android:hint="Mensagem em Morse" />
+        android:hint="Telefone em Morse" />
 
     <TextView android:id="@+id/traducao"
         android:layout_width="match_parent"
@@ -25,25 +25,17 @@
         android:gravity="center"
         android:layout_marginTop="50dp"
         android:layout_margin="5dp"
-        android:hint="Mensagem traduzida" />
+        android:hint="Telefone" />
 
-    <Button android:id="@+id/botao_numero"
+    <Button
+        android:id="@+id/botao_enviar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:textSize="25sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="95dp"
         android:background="@drawable/retangulo"
         android:textColor="#FFFFFF"
-        android:text="Número de telefone" />
-
-    <Button android:id="@+id/botao_espaço"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:textSize="25sp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/retangulo"
-        android:textColor="#FFFFFF"
-        android:text="Espaço" />
+        android:text="Enviar" />
 
     <Button android:id="@+id/botao_apagar"
         android:layout_width="match_parent"
