@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonTranslator = findViewById(R.id.tradutor_button);
         Button buttonLista = findViewById(R.id.texts_button);
         Button buttonDict = findViewById(R.id.dic5_button);
+        Button buttonSMS = findViewById(R.id.sms);
 
         buttonTranslator.setOnClickListener((view) -> {
             Intent intent = new Intent(this, Hist2Activity.class);
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         buttonDict.setOnClickListener((view) -> {
             Intent intent = new Intent(this, dic5Activity.class);
+            startActivity(intent);
+        });
+
+        buttonSMS.setOnClickListener((view) -> {
+            Intent intent = new Intent(this, SMS.class);
             startActivity(intent);
         });
     }
